@@ -83,7 +83,14 @@ public class CustomKMeans {
 			}
 		}
 
-		centroids = newCentroids;
+		if (newCentroids.numInstances() == k) {
+			centroids.clear();
+			for (int i = 0; i < k; i++) {
+				centroids.add(new DenseInstance(newCentroids.instance(i)));
+			}
+		} else {
+			System.err.println("Error: Number of new centroids does not match the expected number of clusters.");
+		}
 	}
 
 	private Instances getInstancesInCluster(int clusterIndex) {
@@ -124,7 +131,6 @@ public class CustomKMeans {
 			DataSource source = new DataSource("/DM_20231030_20130283_NguyenPhamQuocHuy/data/ketqua_hoctap_sv.arff");
 			Instances data = source.getDataSet();
 
-			// Specify the number of clusters (k)
 			int k = 3;
 
 			// Initialize and build the custom KMeans clusterer
