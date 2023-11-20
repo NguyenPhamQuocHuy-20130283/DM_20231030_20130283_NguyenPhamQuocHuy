@@ -1,0 +1,12 @@
+@relation Kmean_ex
+
+@attribute x numeric
+@attribute y numeric
+
+@data
+1.27,9.33
+1.38,7.41
+8.46,3.91
+8.76,8.79
+9.8,5.8
+3.69,7.25
