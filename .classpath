@@ -8,10 +8,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/weka"/>
-	<classpathentry exported="true" kind="lib" path="C:/Program Files/Weka-3-8-6/weka.jar">
+	<classpathentry kind="lib" path="D:/webHomework/DM_20231030_20130283_NguyenPhamQuocHuy/weka.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="weka.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

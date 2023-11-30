@@ -1,6 +1,5 @@
 package week_20_11;
 
-import weka.clusterers.Clusterer;
 import weka.core.Instance;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils.DataSource;
